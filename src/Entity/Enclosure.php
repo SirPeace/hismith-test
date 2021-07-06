@@ -30,7 +30,7 @@ class Enclosure
     private $type;
 
     /**
-     * @ORM\ManyToMany(targetEntity=News::class, mappedBy="enclosures")
+     * @ORM\ManyToMany(targetEntity=News::class, mappedBy="enclosures", cascade={"persist"})
      */
     private $news;
 

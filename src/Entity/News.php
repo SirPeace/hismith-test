@@ -45,7 +45,7 @@ class News
     private $author;
 
     /**
-     * @ORM\ManyToMany(targetEntity=Enclosure::class, inversedBy="news")
+     * @ORM\ManyToMany(targetEntity=Enclosure::class, inversedBy="news", cascade={"persist"})
      */
     private $enclosures;
 
