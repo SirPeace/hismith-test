@@ -47,6 +47,9 @@ class ListenForNewsCommand extends Command
     {
         $io = new SymfonyStyle($input, $output);
 
+        // Run first command without delay
+        $this->listenForNews($io);
+
         $loop = \React\EventLoop\Factory::create();
 
         $loop->addPeriodicTimer(
