@@ -7,8 +7,8 @@ interface ParserInterface
     /**
      * Parse file entries to the array equivalent
      *
-     * @param string $file
+     * @param string $filepath
      * @return array
      */
-    public function parse(string $file): array;
+    public function parse(string $filepath): array;
 }

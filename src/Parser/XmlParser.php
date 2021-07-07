@@ -4,9 +4,9 @@ namespace App\Parser;
 
 class XmlParser implements ParserInterface
 {
-    public function parse(string $file): array
+    public function parse(string $filepath): array
     {
-        $xmlRoot = simplexml_load_file($file);
+        $xmlRoot = simplexml_load_file($filepath);
         $data = [];
 
         $i = 0;
