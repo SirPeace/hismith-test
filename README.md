@@ -55,9 +55,3 @@ symfony serve
 ```
 var/log/dev.log
 ```
-
-### Дополнительные плюсы
-- Фреймворк Symfony 5
-- СУБД PostgreSQL
-- Подключена EasyAdmin панель
-- Команда реализована демоном ReactPHP
